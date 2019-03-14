@@ -10,17 +10,15 @@ DISPLAY Resultant force is "f" N
 
 DISPLAY "Enter a year"
 GETINPUT "n"
-WHILE "n" is a number
-  IF "n" mod 4 is greater than 0
-    DISPLAY "n" is not a leap year
-  ELSE IF "n" mod 100 is equal to 0
-    IF "n" mod 400 is equal to 0
-      DISPLAY "n" is a leap year
-    ELSE
-      DISPLAY "n" is not a leap year
-  ELSE
+IF "n" mod 4 is greater than 0
+  DISPLAY "n" is not a leap year
+ELSE IF "n" mod 100 is equal to 0
+  IF "n" mod 400 is equal to 0
     DISPLAY "n" is a leap year
-ELSE "inpus has to be a number"
+  ELSE
+    DISPLAY "n" is not a leap year
+ELSE
+  DISPLAY "n" is a leap year
 
 3. Laundry Day
 

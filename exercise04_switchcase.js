@@ -1,12 +1,13 @@
 // assign nilai variabel tanggal disini! (dengan angka antara 1 - 31)
-var tanggal = 5
+var tanggal = 1
+if(tanggal<1 || tanggal>31) tanggal = "(Tanggal tidak valid, harus angka antara 1 - 31)"
 // assign nilai variabel bulan disini! (dengan angka antara 1 - 12)
 var bulan = 5
 // assign nilai variabel tahun disini! (dengan angka antara 1900 - 2200)
-var tahun = 1967
+var tahun = 1945
+if(tahun<1900 || tahun>2200) tahun = "(Tahun tidak valid, harus angka antara 1900 - 2200)"
 
 var namabulan
-
 switch(bulan){
     case 1: namabulan = "Januari"
     break
@@ -32,7 +33,7 @@ switch(bulan){
     break
     case 12: namabulan = "Desember"
     break
-    default: namabulan = "bulan"
+    default: namabulan = "(Bulan tidak valid, harus angka antara 1-12)"
     break
 }
 
